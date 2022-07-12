@@ -1,4 +1,4 @@
-<h1 align="center">Message Board README 
+<h1 align="center">Message Board >
   <a href="https://peaceful-taiga-91815.herokuapp.com/">Visit live</a>
 <i>A curated list of awesome Github Profile READMEs</i>
 
