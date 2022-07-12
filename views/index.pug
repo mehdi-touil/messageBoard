@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1(class='d-flex justify-content-center')= title
+  a( href='/new') 
+    button(class='btn btn-primary') Add new message
+  ul
+  -const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+  each msg in messages
+     .input-group
+         .input-group-text.user.text-center=msg.user
+         li.form-control.msg=msg.text
+         .input-group-text.w-50.date=msg.added.toLocaleString()      
+         //toLocaleDateString(undefined, options)

@@ -1,0 +1,21 @@
+extends layout
+
+block content
+   h1.text-center= 'New Message'
+   form(method="POST" action='/new') 
+    div(class='form-floating mb-3')
+     input(
+  type='text'
+  name='messageUser'
+  placeholder='authorName'
+  id='authorName'
+  class='form-control'
+)
+     label(for="authorName") Author Name
+    div(class='form-floating mb-3')
+        textarea.form-control#messageText(placeholder='msg',name='messageText')
+        label(for="messageText")='Your Message'
+
+    button(type='submit' class='btn btn-dark') Submit
+    a( href='/' class='btn btn-success ms-3') GoBack
+
